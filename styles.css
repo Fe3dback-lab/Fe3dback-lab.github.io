@@ -7,6 +7,11 @@
     z-index: 1000;
 }
 */
+.cuesta{
+    width: 30%;
+    height: 30%;
+}
+
 .presentacion{
     max-width: 90%;
     margin: 10% auto;
