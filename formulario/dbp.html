@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="estiloformulario">
+        <form id="formulario">
+            <div class="form-group">
+                <label for="primer-nombre">Primer Nombre:</label>
+                <br>
+                <input type="text" class="form-control" id="primer-nombre" name="primer-nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="segundo-nombre">Segundo Nombre:</label>
+                <br>
+                <input type="text" class="form-control" id="segundo-nombre" name="segundo-nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Primer apellido:</label>
+                <br>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="segundo-apellido">Segundo apellido:</label>
+                <br>    
+                <input type="text" class="form-control" id="segundo-apellido" name="segundo-apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <br>
+                <input type="date" class="form-control" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <br>
+                <input type="text" class="form-control" id="dni" name="dni" required>
+            </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div class="mt-4" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
