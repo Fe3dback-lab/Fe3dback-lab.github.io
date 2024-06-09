@@ -22,5 +22,13 @@ document.getElementById('formulario-contacto').addEventListener('submit', functi
         alert('Por favor, ingresa tu mensaje.');
         return;
     }
+    const confirmacion = `¿Son correctos estos datos?\n\nNombre Completo: ${nombre} ${apellidos}\nCorreo: ${correo}`;
+                if (confirm(confirmacion)){
+                    alert("Formulario enviado correctamente.");
+                    formulario.submit();
+                } 
+                else{
+                    alert("Por favor, revisa tus datos y corrige cualquier error.");
+                }
     alert('Formulario enviado con éxito.');
 });
