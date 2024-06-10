@@ -1,3 +1,25 @@
+document.querySelectorAll('img').forEach(img => {
+    img.style.transition = 'transform 0.3s';
+    img.addEventListener('mouseover', () => {
+        img.style.transform = 'scale(1.1)';
+    });
+    img.addEventListener('mouseout', () => {
+        img.style.transform = 'scale(1)';
+    });
+});
+
+document.querySelectorAll('li').forEach(button => {
+    button.style.transition = 'background-color 0.3s, transform 0.3s';
+    button.addEventListener('mouseover', () => {
+        button.style.backgroundColor = 'blue';
+        button.style.transform = 'scale(1.1)';
+    });
+    button.addEventListener('mouseout', () => {
+        button.style.backgroundColor = '';
+        button.style.transform = 'scale(1)';
+    });
+});
+
 document.getElementById('formulario-contacto').addEventListener('submit', function(event){
     event.preventDefault();
 
